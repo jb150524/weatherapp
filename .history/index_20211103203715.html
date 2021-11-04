@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <h1 id="banner">Weather Dashboard</h1>
+    <div id=search-current>
+      <!-- Search Bar -->
+      <div id="search-area">
+        <form>
+            <h2>Search for a City:</h2>
+            <input type="text" name="city" id="city" placeholder="e.g. Kansas">
+            <button id="search">Search</button>
+            <button id="clear">Clear Search History</button>
+        </form>
+      
+        <!-- Search History -->
+        <ul id="search-list" class="list-group"></ul>
+      </div>
+      <div id="all-weather-cards">
+        <!-- Current Weather Card -->
+        <div id="current-weather" class="card">
+          <div class="card-body">
+            <h2 id="cityname"></h2>
+            <h2 id="date"></h2>
+            <div id="img_home"></div>
+            <p id="temp"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+            <p id="uvi">
+            <p id="uvi-display-number"></p>
+            </p>
+          </div>
+        </div>
+        <h2 id="forecast-label">5-Day Forecast:</h2>
+      <!-- Future Weather Cards -->
+        <div id="future-weather">
+          <div class="card">
+            <div id="1" class="card-body">
+            </div>
+          </div>
+          <div class="card">
+            <div id="2" class="card-body">
+            </div>
+          </div>
+          <div class="card">
+            <div id="3" class="card-body">
+            </div>
+          </div>
+          <div class="card">
+            <div id="4" class="card-body">
+            </div>
+          </div>
+          <div class="card">
+            <div id="5" class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
